@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntentLab</string>
+    <string name="back">Back</string>
+    <string name="info">About IntentLab</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="send">Send</string>
+
+    <string name="tab_builder">Build</string>
+    <string name="tab_deep_link">Deep link</string>
+    <string name="tab_history">History</string>
+
+    <string name="identity_title">Sent as IntentLab</string>
+    <string name="identity_text">Every intent uses the identity and permissions of IntentLab, which holds none beyond QUERY_ALL_PACKAGES. Nothing is sent until you tap Send.</string>
+
+    <string name="section_intent">Intent</string>
+    <string name="field_action">Action</string>
+    <string name="field_data">Data URI</string>
+    <string name="field_mime">MIME type</string>
+    <string name="field_categories_other">Other categories, separated by commas</string>
+    <string name="section_target">Explicit target</string>
+    <string name="field_package">Package</string>
+    <string name="field_class">Component class, full name or .ShortName</string>
+    <string name="section_extras">Extras</string>
+    <string name="section_send">Send</string>
+    <string name="section_result">Result</string>
+    <string name="section_command">adb command</string>
+    <string name="toggle_categories">Categories (%1$d selected)</string>
+    <string name="toggle_flags">Flags (%1$d selected, %2$s)</string>
+    <string name="flags_note">Activity and broadcast flags share values, so the same bit means something else in each kind of send. FLAG_DEBUG_LOG_RESOLUTION is left out because it writes intents to the system log.</string>
+    <string name="group_uri_grant">URI access, reviewed before sending</string>
+    <string name="group_general">General</string>
+    <string name="group_activity">Activity</string>
+    <string name="group_broadcast">Broadcast</string>
+    <string name="add_extra">Add extra</string>
+    <string name="remove_extra">Remove extra</string>
+    <string name="extra_key">Key</string>
+    <string name="extra_value">Value</string>
+    <string name="extra_hint_string">Text</string>
+    <string name="extra_hint_integer">Whole number</string>
+    <string name="extra_hint_decimal">Number, such as 1.5</string>
+    <string name="extra_hint_boolean">true or false</string>
+    <string name="extra_hint_array">a,b,c and \\, for a comma</string>
+    <string name="use_chooser">Show the Android chooser</string>
+    <string name="preview_matches">Preview matches</string>
+    <string name="save_favourite">Save favourite</string>
+    <string name="clear_form">Clear form</string>
+    <string name="command_note">Device line: paste it into adb shell or a terminal on the phone. adb line: for bash and zsh on a computer. On Windows, run adb shell first and paste the device line. adb runs as the shell user, so it can behave differently from IntentLab.</string>
+    <string name="copy_adb">Copy adb line</string>
+    <string name="copy_device">Copy device line</string>
+    <string name="copied">Copied</string>
+    <string name="copy_failed">Could not copy</string>
+    <string name="command_fix_errors">Fix the errors above to get a command.</string>
+    <string name="label_adb">adb line</string>
+    <string name="label_device">Device line</string>
+
+    <string name="sent_activity">Started. The system picked the target.</string>
+    <string name="sent_waiting">Started. Waiting for the result.</string>
+    <string name="sent_broadcast">Broadcast sent. Android does not report who received it.</string>
+    <string name="sent_service">Service started: %1$s</string>
+    <string name="service_not_found">No service was found for this intent.</string>
+    <string name="not_kept_in_history">It is too large to keep in history.</string>
+    <string name="chooser_title">Open with</string>
+    <string name="review_title">Review URI access</string>
+    <string name="review_send">Send</string>
+    <string name="favourite_title">Favourite name</string>
+    <string name="favourite_default">Unnamed</string>
+
+    <string name="deep_link_title">Test a link</string>
+    <string name="deep_link_hint">https://example.com/path or myapp://open</string>
+    <string name="deep_link_note">Tests ACTION_VIEW with CATEGORY_BROWSABLE, as a tapped link does. Android verifies only http and https links.</string>
+    <string name="list_handlers">List handlers</string>
+    <string name="open_link">Open</string>
+    <string name="use_in_builder">Use in builder</string>
+    <string name="open_in_app">Open in this app</string>
+    <string name="deep_link_opened">Opened.</string>
+    <string name="section_link">Link</string>
+    <string name="section_handlers">Handlers</string>
+    <string name="link_summary">Scheme: %1$s\nHost: %2$s</string>
+    <string name="link_no_host">none</string>
+    <string name="no_handlers">No app handles this link.</string>
+    <string name="default_handler_is">Android opens it directly in %1$s.</string>
+    <string name="default_handler_none">No single default, so Android may ask which app to use.</string>
+    <string name="tag_default">Default</string>
+    <string name="tag_not_exported">Not exported</string>
+    <string name="tag_disabled">Disabled</string>
+    <string name="tag_unknown">\?</string>
+    <string name="handler_details">%1$s\n\nExported: %2$s\n%3$s</string>
+    <string name="permission_required">Needs %1$s</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="verify_not_web">Android verifies only http and https links, so this does not apply to %1$s.</string>
+    <string name="verify_needs_api">Verification state needs Android 12 or later.</string>
+    <string name="verify_no_domains">This app declares no http or https domains.</string>
+    <string name="verify_failed">Android did not share the state for this app (%1$s).</string>
+    <string name="verify_summary">This link: %1$s\nOpen supported links: %2$s\n\nDeclared hosts:\n%3$s</string>
+    <string name="verify_none_listed">None</string>
+
+    <string name="section_favourites">Favourites</string>
+    <string name="section_recent">Recent</string>
+    <string name="clear_history">Clear history</string>
+    <string name="clear_history_message">Delete all recent intents? Favourites stay.</string>
+    <string name="history_note">Tap to load into the builder. Nothing is sent until you tap Send. Press and hold for more.</string>
+    <string name="history_empty">Intents you send and favourites you save appear here. They stay in private storage.</string>
+    <string name="entry_no_action">No action</string>
+    <string name="entry_save_favourite">Save as favourite</string>
+    <string name="entry_rename">Rename</string>
+    <string name="outcome_sent">Sent</string>
+    <string name="outcome_failed">Failed</string>
+
+    <string name="resolve_title">Would match</string>
+    <string name="section_activities">Activities</string>
+    <string name="section_services">Services</string>
+    <string name="section_receivers">Broadcast receivers</string>
+    <string name="section_used">%1$s (used by %2$s)</string>
+    <string name="no_matches">No match.</string>
+    <string name="resolve_failed">Android could not list matches.\n%1$s</string>
+    <string name="resolve_uri_note">Extras do not affect matching and are not part of this preview.</string>
+    <string name="use_as_target">Use as explicit target</string>
+    <string name="load_failed">Could not load this.</string>
+
+    <string name="info_message">IntentLab builds and sends intents and tests deep links on the phone.\n\nIdentity. Every intent is sent with the identity and permissions of IntentLab. It holds none beyond QUERY_ALL_PACKAGES, which is used to show which apps match. It claims no privileged access, so Android refuses what needs more.\n\nControl. Nothing is sent without your tap. IntentLab reads nothing from the intent that starts it, so another app cannot fill in this form. URI access is shown to you before it is granted.\n\nPrivacy. There is no Internet permission and no analytics. History stays in private storage and is left out of backups. Android itself can log activity starts in the system log.\n\nFree software under the GPL v3.</string>
+</resources>

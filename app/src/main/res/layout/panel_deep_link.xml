@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Card">
+
+        <TextView
+            style="@style/CardTitle"
+            android:text="@string/deep_link_title" />
+
+        <EditText
+            android:id="@+id/linkInput"
+            style="@style/FieldInput"
+            android:layout_marginTop="8dp"
+            android:hint="@string/deep_link_hint"
+            android:inputType="textUri"
+            android:maxLines="3"
+            android:saveEnabled="true" />
+
+        <TextView
+            style="@style/BodyNote"
+            android:text="@string/deep_link_note" />
+
+        <TextView
+            android:id="@+id/linkStatus"
+            style="@style/BodyNote"
+            android:textColor="@color/amber"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/listHandlersButton"
+                style="@style/RowButton"
+                android:layout_marginEnd="8dp"
+                android:text="@string/list_handlers" />
+
+            <Button
+                android:id="@+id/linkToBuilderButton"
+                style="@style/RowButton"
+                android:text="@string/use_in_builder" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/openLinkButton"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="8dp"
+            android:filterTouchesWhenObscured="true"
+            android:text="@string/open_link" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/handlersList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="16dp"
+            android:scrollbars="none" />
+
+        <ProgressBar
+            android:id="@+id/handlersProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/brand_soft"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

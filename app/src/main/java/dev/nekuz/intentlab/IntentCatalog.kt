@@ -1,0 +1,65 @@
+package dev.nekuz.intentlab
+
+object IntentCatalog {
+    val actions: List<String> = listOf(
+        "android.intent.action.VIEW",
+        "android.intent.action.MAIN",
+        "android.intent.action.SEND",
+        "android.intent.action.SEND_MULTIPLE",
+        "android.intent.action.SENDTO",
+        "android.intent.action.EDIT",
+        "android.intent.action.INSERT",
+        "android.intent.action.PICK",
+        "android.intent.action.GET_CONTENT",
+        "android.intent.action.OPEN_DOCUMENT",
+        "android.intent.action.OPEN_DOCUMENT_TREE",
+        "android.intent.action.CREATE_DOCUMENT",
+        "android.intent.action.DIAL",
+        "android.intent.action.SEARCH",
+        "android.intent.action.WEB_SEARCH",
+        "android.intent.action.ASSIST",
+        "android.intent.action.CHOOSER",
+        "android.media.action.IMAGE_CAPTURE",
+        "android.media.action.VIDEO_CAPTURE",
+        "android.settings.SETTINGS",
+        "android.settings.APPLICATION_DETAILS_SETTINGS",
+        "android.settings.APP_OPEN_BY_DEFAULT_SETTINGS",
+        "android.settings.WIFI_SETTINGS",
+        "android.settings.BLUETOOTH_SETTINGS",
+        "android.settings.LOCATION_SOURCE_SETTINGS",
+    )
+
+    val categories: List<String> = listOf(
+        "android.intent.category.DEFAULT",
+        "android.intent.category.BROWSABLE",
+        "android.intent.category.LAUNCHER",
+        "android.intent.category.HOME",
+        "android.intent.category.OPENABLE",
+        "android.intent.category.INFO",
+        "android.intent.category.ALTERNATIVE",
+        "android.intent.category.APP_BROWSER",
+        "android.intent.category.APP_EMAIL",
+        "android.intent.category.APP_GALLERY",
+        "android.intent.category.APP_MAPS",
+        "android.intent.category.APP_MESSAGING",
+        "android.intent.category.APP_MUSIC",
+    )
+
+    val mimeTypes: List<String> = listOf(
+        "*/*",
+        "text/plain",
+        "text/html",
+        "text/csv",
+        "image/*",
+        "image/jpeg",
+        "image/png",
+        "audio/*",
+        "video/*",
+        "video/mp4",
+        "application/pdf",
+        "application/json",
+        "application/zip",
+        "vnd.android.cursor.dir/contact",
+        "vnd.android.cursor.item/contact",
+    )
+}

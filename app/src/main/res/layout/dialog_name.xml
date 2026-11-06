@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FieldInput"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:hint="@string/favourite_title"
+    android:maxLength="80"
+    android:singleLine="true" />

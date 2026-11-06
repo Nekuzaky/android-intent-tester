@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/extraKey"
+            style="@style/FieldInput"
+            android:layout_width="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:hint="@string/extra_key"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/extraType"
+            android:layout_width="130dp"
+            android:layout_height="44dp"
+            android:popupBackground="@color/surface_high"
+            android:saveEnabled="false" />
+
+        <ImageButton
+            android:id="@+id/extraRemove"
+            style="@style/IconButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="6dp"
+            android:contentDescription="@string/remove_extra"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/extraValue"
+        style="@style/FieldInput"
+        android:layout_marginTop="6dp"
+        android:hint="@string/extra_value"
+        android:inputType="textVisiblePassword|textNoSuggestions|textMultiLine" />
+</LinearLayout>
